@@ -268,12 +268,14 @@ ________________________________________________________________________________
 7- Instalar GitHub Desktop
   ~ comando: choco install github-desktop
   
-7 - Extensões do chrome:
+8 - Instalar o Ubuntu WSL
+  ~ comando: choco install wsl-ubuntu-2004
+  
+9 - Extensões do chrome:
   ~ JSON viewer;
   ~ React developer tools;
   ~ Octotree;
    
-   
-8 - Ferramentas:
-  ~ Whimsical #UX;
-  ~ Insominia #API;
+10 - Ferramentas:
+   ~ Whimsical #UX;
+   ~ Insominia #API;
