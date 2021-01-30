@@ -1,6 +1,6 @@
 # Ambiente-Windows
-
 Minhas configuração do ambiente Windows
+
 
 1 - Instalar o gerenciador de pacotes Chocolatey
   Com Windows Power Shell como ADM execute:
