@@ -4,11 +4,10 @@
 
 ### 1. Instalar o gerenciador de pacotes Chocolatey
   Com Windows Power Shell como ADM execute:
- * comando: 
-  `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;     iex ((New-   Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
+ * bash-adm: `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;     iex ((New-   Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 __________________________________________________________________________________________________________________________
 ### 2. Instalar o editor de texto VSCODE
-  * comando: `choco install vscode`
+  * bash: `choco install vscode`
   
   ## Plugins:
   
@@ -83,7 +82,7 @@ ________________________________________________________________________________
 
 
 ### 3. - Instalar o NODE
-  * comando: `choco install nodejs-lts`
+  * bash: `choco install nodejs-lts`
   
 
 ### 4. Instalar o GIT
@@ -125,7 +124,7 @@ ________________________________________________________________________________
   ______________________________________________________________________________________________________________________
 
 ### 4. Instalar o terminal Windows Terminal
-  * comando: `choco install microsoft-windows-terminal`
+  * bash: `choco install microsoft-windows-terminal`
   
   #### 4.1. Colar as configurações no terminal para o arquivo config abrindo o terminal e pressionando ctrl + , :
   
@@ -258,16 +257,16 @@ ________________________________________________________________________________
  __________________________________________________________________________________________________________
   
 ### 5. Instalar a consulta de documentações DevDocs
-  * comando: `choco install devdocs-app`
+  * bash: `choco install devdocs-app`
   
 ### 6. Instalar o Notion
-  * comando: `choco install notion`
+  * bash: `choco install notion`
   
 ### 7. Instalar GitHub Desktop
-  * comando: `choco install github-desktop`
+  * bash: `choco install github-desktop`
   
 ### 8. Instalar o Ubuntu WSL
-  * comando: `choco install wsl-ubuntu-2004`
+  * bash: `choco install wsl-ubuntu-2004`
   
 ### 9. Extensões do chrome:
   * JSON viewer;
