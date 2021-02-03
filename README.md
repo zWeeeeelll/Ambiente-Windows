@@ -1,95 +1,96 @@
 # Ambiente-Windows
-Minhas configuração do ambiente Windows
+## Minhas configurações no ambiente Windows
 
 
-1 - Instalar o gerenciador de pacotes Chocolatey
+### 1. Instalar o gerenciador de pacotes Chocolatey
   Com Windows Power Shell como ADM execute:
-  ~ comando: Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+ * comando: 
+  `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;     iex ((New-   Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 __________________________________________________________________________________________________________________________
-2 - Instalar o editor de texto VSCODE
-  ~ comando: choco install vscode
+### 2. Instalar o editor de texto VSCODE
+  * comando: `choco install vscode`
   
-  Plugins:
+  ## Plugins:
   
-  ~ ColorHighlight – Esse plugin mostra a cor exata de todos RGB’s ou HEX em seu código, muito útil para quem trabalha com CSS ou SASS;
+  * ColorHighlight – Esse plugin mostra a cor exata de todos RGB’s ou HEX em seu código, muito útil para quem trabalha com CSS ou SASS;
   
-  ~ DotEnv – Plugin que utilizo para ter suporte à sintaxe .env, muito útil para quem trabalha com NodeJS, ReactJS ou qualquer outro tipo de projeto web;
+  * DotEnv – Plugin que utilizo para ter suporte à sintaxe .env, muito útil para quem trabalha com NodeJS, ReactJS ou qualquer outro tipo de projeto web;
   
-  ~ Dracula Official – Tema que utilizo no meu VSCode e em todos outros editores/terminais, pra mim foi o tema que mais me agradou durante mais tempo e olha que já usei muitos;
+  * Dracula Official – Tema que utilizo no meu VSCode e em todos outros editores/terminais, pra mim foi o tema que mais me agradou durante mais tempo e olha que já usei muitos;
   
-  ~ EditorConfig – Plugin utilizado para padronizar quebra de linha, indentação, espaços e tabs entre desenvolvedores de um mesmo projeto;
+  * EditorConfig – Plugin utilizado para padronizar quebra de linha, indentação, espaços e tabs entre desenvolvedores de um mesmo projeto;
   
-  ~ ESLint – Plugin utilizado para padronizar código entre desenvolvedores como utilização de pontos e vírgulas, tamanho máximo de caracteres em linhas e todo outro tipo de padronização. Recomendo muito a utilização desse plugin junto aos guias de estilo do AirBnB;
+  * ESLint – Plugin utilizado para padronizar código entre desenvolvedores como utilização de pontos e vírgulas, tamanho máximo de caracteres em linhas e todo outro tipo de padronização. Recomendo muito a utilização desse plugin junto aos guias de estilo do AirBnB;
   
-  ~ Markdown All in One – Plugin que utilizo para escrever e ler Markdown dentro do VSCode, muito útil para documentações o README’s do Github;
+  * Markdown All in One – Plugin que utilizo para escrever e ler Markdown dentro do VSCode, muito útil para documentações o README’s do Github;
   
-  ~ Material Icon Theme – Utilizo para exibir os ícones de acordo com a linguagem utilizada na minha sidebar. Fica muito legal mesmo pois esse plugin identifica a grande parte de libs e ferramentas.
+  * Material Icon Theme – Utilizo para exibir os ícones de acordo com a linguagem utilizada na minha sidebar. Fica muito legal mesmo pois esse plugin identifica a grande parte de libs e ferramentas.
   
-  ~ Configurações do settings.json:
+  * ##### Configurações do settings.json:
   
-      {
-      "workbench.colorTheme": "Dracula",
+           {
+          "workbench.colorTheme": "Dracula",
 
-      "workbench.iconTheme": "material-icon-theme",
+          "workbench.iconTheme": "material-icon-theme",
 
-      "terminal.integrated.shell.osx": "/bin/zsh",
+          "terminal.integrated.shell.osx": "/bin/zsh",
 
-      "workbench.startupEditor": "newUntitledFile",
+          "workbench.startupEditor": "newUntitledFile",
 
-      // Configura tamanho e família da fonte
+          // Configura tamanho e família da fonte
 
-      "editor.tabSize": 2,
+          "editor.tabSize": 2,
 
-      "editor.fontSize": 18,
+          "editor.fontSize": 18,
 
-      "editor.lineHeight":24,
+          "editor.lineHeight":24,
 
-      "editor.fontFamily":"Fira Code",
+          "editor.fontFamily":"Fira Code",
 
-      "editor.fontLigatures":false,
+          "editor.fontLigatures":false,
 
-      "explorer.compactFolders": true,
+          "explorer.compactFolders": true,
 
-      "workbench.editor.labelFormat": "short",
+          "workbench.editor.labelFormat": "short",
 
-      "extensions.ignoreRecommendations": true,
+          "extensions.ignoreRecommendations": true,
 
-      // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
+          // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
 
-      "editor.rulers": [
+          "editor.rulers": [
 
-      80,
+          80,
 
-      120
+          120
 
-      ],
+          ],
 
-      "breadcrumbs.enabled": true,
+          "breadcrumbs.enabled": true,
 
-      // Aplica um sinal visual na esquerda da linha selecionada
+          // Aplica um sinal visual na esquerda da linha selecionada
 
-      "editor.renderLineHighlight":"gutter",
+          "editor.renderLineHighlight":"gutter",
 
-      // Aumenta a fonte do terminal
+          // Aumenta a fonte do terminal
 
-      "terminal.integrated.fontSize":14,
+          "terminal.integrated.fontSize":14,
 
-      // Define o tema dos ícones na sidebar
+          // Define o tema dos ícones na sidebar
 
-      }  
+          }
       
-    --Em breve link de repositorio das configurações do VSCODE--
+    * Em breve link de repositorio das configurações do VSCODE
 ___________________________________________________________________________________________________________________________
 
 
-3 - Instalar o NODE
-  ~ comando: choco install nodejs-lts
+### 3. - Instalar o NODE
+  * comando: `choco install nodejs-lts`
   
 
-4 - Instalar o GIT
-  ~ comando: choco install git 
+### 4. Instalar o GIT
+  * bash: `choco install git`` 
   
-  Configurações no arquivo .gitconfig:
+  #### Configurações no arquivo .gitconfig:  
   
         [color]
         ui = true
@@ -121,16 +122,17 @@ ________________________________________________________________________________
         unstage = reset HEAD --
         undo = checkout --
         rollback = reset --soft HEAD~1  
-   --Em breve criarei repositório das configurações do meu git--
+        
+   #### Em breve criarei repositório das configurações do meu git 
   ______________________________________________________________________________________________________________________
 
-4 - Instalar o terminal Windows Terminal
-  ~ comando: choco install microsoft-windows-terminal
+### 4. Instalar o terminal Windows Terminal
+  * comando: `choco install microsoft-windows-terminal`
   
-  4.1 - Colar as configurações no terminal para o arquivo config abrindo o terminal e pressionando ctrl + , :
+  #### 4.1. Colar as configurações no terminal para o arquivo config abrindo o terminal e pressionando ctrl + , :
   
     
-     // This file was initially generated by Windows Terminal 1.5.10271.0
+   `// This file was initially generated by Windows Terminal 1.5.10271.0
     // It should still be usable in newer versions, but newer versions might have additional
     // settings, help text, or changes that you will not see unless you clear this file
     // and let us generate a new one for you.
@@ -253,29 +255,27 @@ ________________________________________________________________________________
         ],
 
         "keybindings": [{"command":"newTab", "keys":["ctrl+t"]}]    
-    }
-
-    
-  --Em breve o criarei um repositório para as configurações do terminal--
+    }  
+   
  __________________________________________________________________________________________________________
+  
+### 5. Instalar a consulta de documentações DevDocs
+  * comando: `choco install devdocs-app`
+  
+### 6. Instalar o Notion
+  * comando: `choco install notion`
+  
+### 7. Instalar GitHub Desktop
+  * comando: `choco install github-desktop`
+  
+### 8. Instalar o Ubuntu WSL
+  * comando: `choco install wsl-ubuntu-2004`
+  
+### 9. Extensões do chrome:
+  * JSON viewer;
+  * React developer tools;
+  * Octotree;
    
-5 - Instalar a consulta de documentações DevDocs
-  ~ comando: choco install devdocs-app
-  
-6 - Instalar o Notion
-  ~ comando: choco install notion
-  
-7- Instalar GitHub Desktop
-  ~ comando: choco install github-desktop
-  
-8 - Instalar o Ubuntu WSL
-  ~ comando: choco install wsl-ubuntu-2004
-  
-9 - Extensões do chrome:
-  ~ JSON viewer;
-  ~ React developer tools;
-  ~ Octotree;
-   
-10 - Ferramentas:
-   ~ Whimsical #UX;
-   ~ Insominia #API;
+### 10. Ferramentas:
+   * Whimsical #UX;
+   * Insominia #API;
